@@ -1,0 +1,5 @@
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\bin\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.deps.json
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\bin\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.dll
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.csprojAssemblyReference.cache
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.AssemblyInfoInputs.cache
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.AssemblyInfo.cs
