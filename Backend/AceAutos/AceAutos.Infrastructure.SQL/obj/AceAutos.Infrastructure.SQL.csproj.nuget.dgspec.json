@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos\\AceAutos.csproj": {}
+    "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\AceAutos.Infrastructure.SQL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos\\AceAutos.csproj": {
+    "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\AceAutos.Infrastructure.SQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos\\AceAutos.csproj",
-        "projectName": "AceAutos",
-        "projectPath": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos\\AceAutos.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\AceAutos.Infrastructure.SQL.csproj",
+        "projectName": "AceAutos.Infrastructure.SQL",
+        "projectPath": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\AceAutos.Infrastructure.SQL.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos\\obj\\",
+        "outputPath": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",

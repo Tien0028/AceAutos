@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos\\AceAutos.csproj",
-      "projectName": "AceAutos",
-      "projectPath": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos\\AceAutos.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAuto.Core\\AceAuto.Core.csproj",
+      "projectName": "AceAuto.Core",
+      "projectPath": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAuto.Core\\AceAuto.Core.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos\\obj\\",
+      "outputPath": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAuto.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
