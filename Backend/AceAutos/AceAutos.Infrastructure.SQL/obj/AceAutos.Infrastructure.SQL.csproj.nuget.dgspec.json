@@ -78,7 +78,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\PC\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj": {
+                "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -89,6 +93,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

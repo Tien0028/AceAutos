@@ -1,13 +1,11 @@
-﻿using Microsoft.IdentityModel.Tokens;﻿
+﻿using Microsoft.IdentityModel.Tokens;
 using AceAutos.Core.Entity;
-using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using System.Text;
 
-namespace PetShopApplicationSolution.Infrastructure.Data.Helpers
+namespace AceAutos.Infrastructure.Data.Helpers
 {
     public class AuthenticationHelper : IAuthenticationHelper
     {

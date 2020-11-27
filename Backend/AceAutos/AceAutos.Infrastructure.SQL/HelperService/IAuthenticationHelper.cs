@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace PetShopApplicationSolution.Infrastructure.Data.Helpers
+namespace AceAutos.Infrastructure.Data.Helpers
 {
     public interface IAuthenticationHelper
     {

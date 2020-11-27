@@ -1,4 +1,5 @@
 ﻿using AceAutos.Core.Entity;
+using AceAutos.Infrastructure.Data.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,6 +9,8 @@ namespace AceAutos.Infrastructure.SQL
     public class DBInitializer : IDBInitializer
     {
         private readonly IAuthenticationHelper authenticationHelper;
+        public static IEnumerable<Car> Cars;
+
 
         public DBInitializer(IAuthenticationHelper authHelper)
         {
@@ -45,7 +48,7 @@ namespace AceAutos.Infrastructure.SQL
                     PasswordSalt = passwordSaltAni, IsAdmin = true},
             };
 
-            List<Car> cars = new List<Car>
+            List<Car> Cars = new List<Car>
             {
                new Car{Manufacturer = "Porsche", Model = "900", Color = "Brown", Type = "Coupe", Price = 999, Fuel = "Gas", Year = 2018, Mileage = 20000,},
                new Car{Manufacturer = "Mercedes Benz", Model = "S Class", Color = "White", Type = "Luxury", Price = 01, Fuel = "Gas", Year = 2018, Mileage = 20000,},
@@ -54,7 +57,7 @@ namespace AceAutos.Infrastructure.SQL
             };
 
             ctx.AddRange(users);
-            ctx.AddRange(cars);
+            ctx.AddRange(Cars);
             ctx.SaveChanges();
 
 

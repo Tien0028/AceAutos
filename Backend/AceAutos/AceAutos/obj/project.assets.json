@@ -2294,6 +2294,10 @@
       "AceAutos.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "AceAutos.Core.Entity": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.0"
+        },
         "compile": {
           "bin/placeholder/AceAutos.Core.dll": {}
         },
@@ -7748,14 +7752,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj": {
-              "projectPath": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj"
+            "C:\\Users\\PC\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj": {
+              "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj"
             },
-            "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core\\AceAutos.Core.csproj": {
-              "projectPath": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core\\AceAutos.Core.csproj"
+            "C:\\Users\\PC\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core\\AceAutos.Core.csproj": {
+              "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core\\AceAutos.Core.csproj"
             },
-            "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\AceAutos.Infrastructure.SQL.csproj": {
-              "projectPath": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\AceAutos.Infrastructure.SQL.csproj"
+            "C:\\Users\\PC\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\AceAutos.Infrastructure.SQL.csproj": {
+              "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\AceAutos.Infrastructure.SQL.csproj"
             }
           }
         }
