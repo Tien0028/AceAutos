@@ -1,0 +1,9 @@
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.DBInitialization\bin\Debug\netcoreapp3.1\AceAutos.Infrastructure.DBInitialization.deps.json
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.DBInitialization\bin\Debug\netcoreapp3.1\AceAutos.Infrastructure.DBInitialization.dll
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.DBInitialization\bin\Debug\netcoreapp3.1\AceAutos.Infrastructure.DBInitialization.pdb
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.DBInitialization\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.DBInitialization.csprojAssemblyReference.cache
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.DBInitialization\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.DBInitialization.AssemblyInfoInputs.cache
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.DBInitialization\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.DBInitialization.AssemblyInfo.cs
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.DBInitialization\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.DBInitialization.csproj.CoreCompileInputs.cache
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.DBInitialization\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.DBInitialization.dll
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.DBInitialization\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.DBInitialization.pdb

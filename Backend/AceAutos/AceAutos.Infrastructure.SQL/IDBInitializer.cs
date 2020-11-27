@@ -4,8 +4,8 @@ using System.Text;
 
 namespace AceAutos.Infrastructure.SQL
 {
-    interface IDBInitializer
+    public interface IDBInitializer
     {
-        
+        void SeedDB(DBContext atx);
     }
 }

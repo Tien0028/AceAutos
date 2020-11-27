@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\PC\\.nuget\\packages\\": {}
+    "C:\\Users\\tiene\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj",
       "projectName": "AceAutos.Core.Entity",
-      "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj",
-      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\obj\\",
+      "projectPath": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj",
+      "packagesPath": "C:\\Users\\tiene\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tiene\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

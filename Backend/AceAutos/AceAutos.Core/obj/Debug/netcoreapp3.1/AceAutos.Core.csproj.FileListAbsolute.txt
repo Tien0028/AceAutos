@@ -1,0 +1,9 @@
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core\bin\Debug\netcoreapp3.1\AceAutos.Core.deps.json
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core\bin\Debug\netcoreapp3.1\AceAutos.Core.dll
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core\bin\Debug\netcoreapp3.1\AceAutos.Core.pdb
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core\obj\Debug\netcoreapp3.1\AceAutos.Core.csprojAssemblyReference.cache
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core\obj\Debug\netcoreapp3.1\AceAutos.Core.AssemblyInfoInputs.cache
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core\obj\Debug\netcoreapp3.1\AceAutos.Core.AssemblyInfo.cs
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core\obj\Debug\netcoreapp3.1\AceAutos.Core.csproj.CoreCompileInputs.cache
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core\obj\Debug\netcoreapp3.1\AceAutos.Core.dll
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core\obj\Debug\netcoreapp3.1\AceAutos.Core.pdb
