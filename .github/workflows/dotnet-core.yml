@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-latest
 
 steps:
-
 	- uses: actions/checkout@v2
 	- name: Setup .NET Core
 	uses: actions/setup-dotnet@v1
@@ -21,6 +20,6 @@ steps:
 	- name: Install dependencies
 	run: dotnet restore
 	- name: Build
-	run: dotnet build Backend/AceAutos/AceAutos.sln --configuration Release --no-restore
+	run: dotnet build --configuration Release --no-restore
 	- name: Test
 	run: dotnet test --no-restore --verbosity normal
