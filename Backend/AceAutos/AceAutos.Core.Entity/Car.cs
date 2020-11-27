@@ -6,5 +6,6 @@ namespace AceAutos.Core.Entity
 {
     public class Car
     {
+
     }
 }

@@ -2,3 +2,12 @@ C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos\obj\D
 C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos\obj\Debug\netcoreapp3.1\AceAutos.AssemblyInfoInputs.cache
 C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos\obj\Debug\netcoreapp3.1\AceAutos.AssemblyInfo.cs
 C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos\obj\Debug\netcoreapp3.1\AceAutos.csproj.CoreCompileInputs.cache
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos\bin\Debug\netcoreapp3.1\AceAutos.exe
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos\bin\Debug\netcoreapp3.1\AceAutos.deps.json
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos\bin\Debug\netcoreapp3.1\AceAutos.runtimeconfig.json
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos\bin\Debug\netcoreapp3.1\AceAutos.runtimeconfig.dev.json
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos\bin\Debug\netcoreapp3.1\AceAutos.dll
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos\bin\Debug\netcoreapp3.1\AceAutos.pdb
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos\obj\Debug\netcoreapp3.1\AceAutos.dll
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos\obj\Debug\netcoreapp3.1\AceAutos.pdb
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos\obj\Debug\netcoreapp3.1\AceAutos.genruntimeconfig.cache
