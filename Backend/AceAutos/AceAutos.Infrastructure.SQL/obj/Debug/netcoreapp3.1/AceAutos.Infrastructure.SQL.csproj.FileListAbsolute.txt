@@ -3,3 +3,12 @@ C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infra
 C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.csprojAssemblyReference.cache
 C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.AssemblyInfoInputs.cache
 C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.AssemblyInfo.cs
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.csproj.CoreCompileInputs.cache
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\bin\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.pdb
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\bin\Debug\netcoreapp3.1\AceAutos.Core.dll
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\bin\Debug\netcoreapp3.1\AceAutos.Core.Entity.dll
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\bin\Debug\netcoreapp3.1\AceAutos.Core.Entity.pdb
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\bin\Debug\netcoreapp3.1\AceAutos.Core.pdb
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.csproj.CopyComplete
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.dll
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.pdb
