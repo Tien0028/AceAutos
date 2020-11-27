@@ -10,7 +10,7 @@ namespace AceAutos.Core.DomainService
         IEnumerable<Car> ReadAllCars();
         List<Car> GetAllCars();
         Car CreateProduct(Car product);
-        Car GetProductByID(int id);
+        Car GetCarById(int id);
         Car Update(Car updateCar);
         Car DeleteCar(int id);
         Car GetCar(long id);

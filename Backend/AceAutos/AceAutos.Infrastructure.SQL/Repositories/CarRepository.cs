@@ -9,7 +9,7 @@ namespace AceAutos.Infrastructure.SQL.Repositories
     public class CarRepository : ICarRepository
     {
         private readonly DBContext _ctx;
-        public static int CarID = 1;
+        public static int CarId = 1;
 
         private static List<Car> _listOfCars = new List<Car>();
 
@@ -33,7 +33,7 @@ namespace AceAutos.Infrastructure.SQL.Repositories
             throw new NotImplementedException();
         }
 
-        public Car GetProductByID(int id)
+        public Car GetCarById(int id)
         {
             throw new NotImplementedException();
         }
