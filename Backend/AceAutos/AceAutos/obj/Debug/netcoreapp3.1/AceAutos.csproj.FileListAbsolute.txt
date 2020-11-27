@@ -1,0 +1,4 @@
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos\obj\Debug\netcoreapp3.1\AceAutos.csprojAssemblyReference.cache
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos\obj\Debug\netcoreapp3.1\AceAutos.AssemblyInfoInputs.cache
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos\obj\Debug\netcoreapp3.1\AceAutos.AssemblyInfo.cs
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos\obj\Debug\netcoreapp3.1\AceAutos.csproj.CoreCompileInputs.cache

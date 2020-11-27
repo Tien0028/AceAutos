@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.DBInitialization\\AceAutos.Infrastructure.DBInitialization.csproj": {}
+    "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.DBInitialization\\AceAutos.Infrastructure.DBInitialization.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.DBInitialization\\AceAutos.Infrastructure.DBInitialization.csproj": {
+    "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.DBInitialization\\AceAutos.Infrastructure.DBInitialization.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.DBInitialization\\AceAutos.Infrastructure.DBInitialization.csproj",
+        "projectUniqueName": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.DBInitialization\\AceAutos.Infrastructure.DBInitialization.csproj",
         "projectName": "AceAutos.Infrastructure.DBInitialization",
-        "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.DBInitialization\\AceAutos.Infrastructure.DBInitialization.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.DBInitialization\\obj\\",
+        "projectPath": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.DBInitialization\\AceAutos.Infrastructure.DBInitialization.csproj",
+        "packagesPath": "C:\\Users\\tiene\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.DBInitialization\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tiene\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
