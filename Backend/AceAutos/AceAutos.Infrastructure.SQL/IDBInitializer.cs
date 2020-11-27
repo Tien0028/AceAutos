@@ -6,6 +6,6 @@ namespace AceAutos.Infrastructure.SQL
 {
     public interface IDBInitializer
     {
-        void SeedDB(DBContext atx);
+        void SeedDB(DBContext ctx);
     }
 }

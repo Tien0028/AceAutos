@@ -1,5 +1,4 @@
-﻿using BackendSolution.Entity;
-using PetShopApplication.Core.Entities;
+﻿using AceAutos.Core.Entity;
 using System;
 using System.Collections.Generic;
 using System.Text;

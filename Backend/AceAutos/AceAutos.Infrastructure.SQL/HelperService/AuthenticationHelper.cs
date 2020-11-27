@@ -1,6 +1,4 @@
-﻿using BackendSolution.Entity;
-using Microsoft.IdentityModel.Tokens;
-using PetShopApplication.Core.Entities;
+﻿using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
