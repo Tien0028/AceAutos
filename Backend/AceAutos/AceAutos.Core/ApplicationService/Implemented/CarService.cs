@@ -57,7 +57,7 @@ namespace AceAutos.Core.ApplicationService.Implemented
             return _carRepo.GetAllCars();
         }
 
-        public Car ReadProductById(int id)
+        public Car ReadCarById(int id)
         {
             return _carRepo.GetCarById(id);
         }
