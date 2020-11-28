@@ -1,7 +1,9 @@
 ﻿using AceAutos.Core.DomainService;
 using AceAutos.Core.Entity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace AceAutos.Infrastructure.SQL.Repositories
@@ -17,27 +19,31 @@ namespace AceAutos.Infrastructure.SQL.Repositories
 
         public void Add(User newUser)
         {
-            throw new NotImplementedException();
+            _ctx.Users.Add(newUser);
+            _ctx.SaveChanges();
         }
 
         public void Edit(User updateUser)
         {
-            throw new NotImplementedException();
+            _ctx.Entry(updateUser).State = EntityState.Modified;
+            _ctx.SaveChanges();
         }
 
         public User Get(long id)
         {
-            throw new NotImplementedException();
+            return _ctx.Users.FirstOrDefault(u => u.Id == id);
         }
 
         public IEnumerable<User> GetAll()
         {
-            throw new NotImplementedException();
+            return _ctx.Users.ToList();
         }
 
         public void Remove(long id)
         {
-            throw new NotImplementedException();
+            var user = _ctx.Users.FirstOrDefault(u => u.Id == id);
+            _ctx.Users.Remove(user);
+            _ctx.SaveChanges();
         }
     }
 }

@@ -4,5 +4,11 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\AceAutos.Core.Entity\AceAutos.Core.Entity.csproj" />
+    <ProjectReference Include="..\..\AceAutos.Core\AceAutos.Core.csproj" />
+    <ProjectReference Include="..\..\AceAutos.Infrastructure.SQL\AceAutos.Infrastructure.SQL.csproj" />
+  </ItemGroup>
+
 
 </Project>

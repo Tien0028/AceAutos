@@ -5,12 +5,12 @@ using System.Text;
 
 namespace AceAutos.Core.DomainService
 {
-public interface IUserRepository
-{
+    public interface IUserRepository
+    {
         IEnumerable<User> GetAll();
         User Get(long id);
         void Add(User newUser);
         void Edit(User updateUser);
         void Remove(long id);
-  }
+    }
 }
