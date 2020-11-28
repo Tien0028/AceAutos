@@ -23,7 +23,7 @@ namespace AceAutos.Core.ApplicationService.Implemented
             {
                 throw new InvalidDataException("");
             }
-            return _carRepo.CreateProduct(car);
+            return _carRepo.CreateCar(car);
         }
 
         public Car CreateCar(string Model, string Type, int Year, string Manufacturer, int Price, string Fuel, string Color, int Mileage)
@@ -59,7 +59,7 @@ namespace AceAutos.Core.ApplicationService.Implemented
 
         public Car ReadProductById(int id)
         {
-            return _carRepo.GetProductByID(id);
+            return _carRepo.GetCarById(id);
         }
 
         public Car Update(Car car)
@@ -72,7 +72,8 @@ namespace AceAutos.Core.ApplicationService.Implemented
             {
                 throw new InvalidDataException("Could not find anything matching the id" + car.Id);
             }
-            return _carRepo.Update(car);
+            return _carRepo.EditCar(car);
+                //Update(car);
         }
     }
 }

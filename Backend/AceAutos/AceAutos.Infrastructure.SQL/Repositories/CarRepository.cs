@@ -1,7 +1,9 @@
 ﻿using AceAutos.Core.DomainService;
 using AceAutos.Core.Entity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace AceAutos.Infrastructure.SQL.Repositories
@@ -20,27 +22,28 @@ namespace AceAutos.Infrastructure.SQL.Repositories
 
         public IEnumerable<Car> ReadAllCars()
         {
-            throw new NotImplementedException();
+            return _listOfCars;
         }
 
         public List<Car> GetAllCars()
         {
-            throw new NotImplementedException();
+            return _ctx.Cars.ToList();
         }
 
-        public Car CreateProduct(Car product)
+        public Car CreateCar(Car car)
         {
             throw new NotImplementedException();
         }
 
         public Car GetCarById(int id)
         {
-            throw new NotImplementedException();
+            return _ctx.Cars.FirstOrDefault(car => car.Id == id);
         }
 
-        public Car Update(Car updateCar)
+        public void Update(Car updateCar)
         {
-            throw new NotImplementedException();
+            _ctx.Entry(updateCar).State = EntityState.Modified;
+            _ctx.SaveChanges();
         }
 
         public Car DeleteCar(int id)
@@ -50,17 +53,20 @@ namespace AceAutos.Infrastructure.SQL.Repositories
 
         public Car GetCar(long id)
         {
-            throw new NotImplementedException();
+            return _ctx.Cars.FirstOrDefault(c => c.Id == id);
         }
 
-        public void AddProduct(Car addProduct)
+        public void AddCar(Car addCar)
         {
-            throw new NotImplementedException();
+            _ctx.Cars.Add(addCar);
+            _ctx.SaveChanges();
         }
 
-        public void RemoveProduct(long id)
+        public void RemoveCar(long id)
         {
-            throw new NotImplementedException();
+            var car = _ctx.Cars.FirstOrDefault(c => c.Id == id);
+            _ctx.Cars.Remove(car);
+            _ctx.SaveChanges();
         }
 
         public Car EditCar(string Model, string Type, int Year, string Manufacturer, int Price, string Fuel, string Color, int Mileage)

@@ -9,13 +9,13 @@ namespace AceAutos.Core.DomainService
     {
         IEnumerable<Car> ReadAllCars();
         List<Car> GetAllCars();
-        Car CreateProduct(Car product);
+        Car CreateCar(Car car);
         Car GetCarById(int id);
-        Car Update(Car updateCar);
+        void Update(Car updateCar);
         Car DeleteCar(int id);
         Car GetCar(long id);
-        void AddProduct(Car addProduct);
-        void RemoveProduct(long id);
+        void AddCar(Car addCar);
+        void RemoveCar(long id);
         Car EditCar(string Model, string Type, int Year, string Manufacturer, int Price, string Fuel, string Color, int Mileage);
 
     }
