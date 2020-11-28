@@ -16,7 +16,7 @@ namespace AceAutos.Core.DomainService
         Car GetCar(long id);
         void AddCar(Car addCar);
         void RemoveCar(long id);
-        Car EditCar(Car updateCar);
+        Car EditCar(string Model, string Type, int Year, string Manufacturer, int Price, string Fuel, string Color, int Mileage);
 
     }
 }
