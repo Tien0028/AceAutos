@@ -2,86 +2,79 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AceAutos.Core.ApplicationService;
+using AceAutos.Core.DomainService;
+using AceAutos.Core.Entity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
 {
+    [Produces("application/json")]
+    [Route("api/[controller]")]
+    [ApiController]
     public class CarController : Controller
     {
-        // GET: CarController
-        public ActionResult Index()
+        private readonly ICarService _carService;
+        private readonly ICarRepository _carRepo;
+
+        public CarController(ICarService carService, ICarRepository carRepo)
         {
-            return View();
+            _carService = carService;
+            _carRepo = carRepo;
         }
 
-        // GET: CarController/Details/5
-        public ActionResult Details(int id)
+        //GET: api/Car
+        [Authorize]
+        [HttpGet]
+        public IEnumerable<Car> GetAll()
         {
-            return View();
+            return _carService.GetCars();
         }
 
-        // GET: CarController/Create
-        public ActionResult Create()
+        // GET api/Car/5
+        [Authorize(Roles = "Adminstrator")]
+        [HttpGet("{id}", Name = "Get")]
+        public IActionResult Get(long id)
         {
-            return View();
+            //return _productService.ReadProductById(id);
+            var pro = _carRepo.GetCar(id);
+            if (pro == null)
+            {
+                return NotFound();
+            }
+            return new ObjectResult(pro);
+
         }
 
-        // POST: CarController/Create
+        // POST api/Car
+        [Authorize(Roles = "Administrator")]
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public IActionResult Post([FromBody] Car car)
         {
-            try
+            if (car == null)
             {
-                return RedirectToAction(nameof(Index));
+                return BadRequest();
             }
-            catch
-            {
-                return View();
-            }
+            _carRepo.AddCar(car);
+
+            return CreatedAtRoute("Get", new { id = car.Id }, car);
         }
 
-        // GET: CarController/Edit/5
-        public ActionResult Edit(int id)
+        // DELETE api/ApiWithActions/5
+        [Authorize(Roles = "Administrator")]
+        [HttpDelete("{id}")]
+        public IActionResult Delete(long id)
         {
-            return View();
-        }
-
-        // POST: CarController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
+            //return _productService.Delete(id);
+            var pro = _carRepo.GetCar(id);
+            if (pro == null)
             {
-                return RedirectToAction(nameof(Index));
+                return NotFound();
             }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: CarController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: CarController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            _carRepo.RemoveCar(id);
+            return new NoContentResult();
         }
     }
 }
