@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AceAutos.Core.ApplicationService.Implemented
 {
-    class UserService
+    public class UserService
     {
     }
 }

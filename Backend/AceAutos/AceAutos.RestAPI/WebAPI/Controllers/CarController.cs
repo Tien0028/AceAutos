@@ -26,7 +26,7 @@ namespace WebAPI.Controllers
         }
 
         //GET: api/Car
-        [Authorize]
+        //[Authorize]
         [HttpGet]
         public IEnumerable<Car> GetAll()
         {
@@ -34,7 +34,7 @@ namespace WebAPI.Controllers
         }
 
         // GET api/Car/5
-        [Authorize(Roles = "Adminstrator")]
+        //[Authorize(Roles = "Adminstrator")]
         [HttpGet("{id}", Name = "Get")]
         public IActionResult Get(long id)
         {
@@ -49,7 +49,7 @@ namespace WebAPI.Controllers
         }
 
         // POST api/Car
-        [Authorize(Roles = "Administrator")]
+        //[Authorize(Roles = "Administrator")]
         [HttpPost]
         public IActionResult Post([FromBody] Car car)
         {
@@ -63,7 +63,7 @@ namespace WebAPI.Controllers
         }
 
         // DELETE api/ApiWithActions/5
-        [Authorize(Roles = "Administrator")]
+        //[Authorize(Roles = "Administrator")]
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {

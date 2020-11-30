@@ -4,7 +4,8 @@ using System.Text;
 
 namespace AceAutos.Core.ApplicationService
 {
-    interface IUserService
+    public interface IUserService
     {
+
     }
 }
