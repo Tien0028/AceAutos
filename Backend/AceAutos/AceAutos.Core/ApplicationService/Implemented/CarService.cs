@@ -8,7 +8,7 @@ using System.Text;
 
 namespace AceAutos.Core.ApplicationService.Implemented
 {
-    public class CarService
+    public class CarService: ICarService
     {
         private readonly ICarRepository _carRepo;
 
@@ -50,6 +50,11 @@ namespace AceAutos.Core.ApplicationService.Implemented
                 throw new InvalidDataException("ID must be higher than one! Otherwise, you failed!");
             }
             return _carRepo.DeleteCar(id);
+        }
+
+        public List<Car> GetCars()
+        {
+            return _carRepo.GetAllCars();
         }
 
         public List<Car> GetProducts()
