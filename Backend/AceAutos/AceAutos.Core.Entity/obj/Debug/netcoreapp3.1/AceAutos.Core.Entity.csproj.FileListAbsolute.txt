@@ -7,3 +7,12 @@ C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core.
 C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core.Entity\obj\Debug\netcoreapp3.1\AceAutos.Core.Entity.csproj.CoreCompileInputs.cache
 C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core.Entity\obj\Debug\netcoreapp3.1\AceAutos.Core.Entity.dll
 C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core.Entity\obj\Debug\netcoreapp3.1\AceAutos.Core.Entity.pdb
+C:\Users\hp\Documents\GitHub\AceAutos\Backend\AceAutos\AceAutos.Core.Entity\bin\Debug\netcoreapp3.1\AceAutos.Core.Entity.deps.json
+C:\Users\hp\Documents\GitHub\AceAutos\Backend\AceAutos\AceAutos.Core.Entity\bin\Debug\netcoreapp3.1\AceAutos.Core.Entity.dll
+C:\Users\hp\Documents\GitHub\AceAutos\Backend\AceAutos\AceAutos.Core.Entity\bin\Debug\netcoreapp3.1\AceAutos.Core.Entity.pdb
+C:\Users\hp\Documents\GitHub\AceAutos\Backend\AceAutos\AceAutos.Core.Entity\obj\Debug\netcoreapp3.1\AceAutos.Core.Entity.csprojAssemblyReference.cache
+C:\Users\hp\Documents\GitHub\AceAutos\Backend\AceAutos\AceAutos.Core.Entity\obj\Debug\netcoreapp3.1\AceAutos.Core.Entity.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\GitHub\AceAutos\Backend\AceAutos\AceAutos.Core.Entity\obj\Debug\netcoreapp3.1\AceAutos.Core.Entity.AssemblyInfo.cs
+C:\Users\hp\Documents\GitHub\AceAutos\Backend\AceAutos\AceAutos.Core.Entity\obj\Debug\netcoreapp3.1\AceAutos.Core.Entity.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\GitHub\AceAutos\Backend\AceAutos\AceAutos.Core.Entity\obj\Debug\netcoreapp3.1\AceAutos.Core.Entity.dll
+C:\Users\hp\Documents\GitHub\AceAutos\Backend\AceAutos\AceAutos.Core.Entity\obj\Debug\netcoreapp3.1\AceAutos.Core.Entity.pdb
