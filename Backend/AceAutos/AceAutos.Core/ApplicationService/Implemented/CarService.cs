@@ -67,18 +67,22 @@ namespace AceAutos.Core.ApplicationService.Implemented
             return _carRepo.GetCarById(id);
         }
 
-        public Car Update(Car car)
+        //public Car Update(Car car)
+        //{
+        //    if (car.Model.Length < 1)
+        //    {
+        //        throw new InvalidDataException("Name must contain 1 character");
+        //    }
+        //    if (car == null)
+        //    {
+        //        throw new InvalidDataException("Could not find anything matching the id" + car.Id);
+        //    }
+        //    return _carRepo.Update(car);
+        //}
+
+        public void UpdateCar(Car car)
         {
-            if (car.Model.Length < 1)
-            {
-                throw new InvalidDataException("Name must contain 1 character");
-            }
-            if (car == null)
-            {
-                throw new InvalidDataException("Could not find anything matching the id" + car.Id);
-            }
-            return _carRepo.EditCar(car);
-                //Update(car);
+            _carRepo.Update(car);
         }
     }
 }
