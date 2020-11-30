@@ -1576,6 +1576,10 @@
         }
       },
       "AceAutos.Core/1.0.0": {
+        "dependencies": {
+          "AceAutos.Core.Entity": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.0"
+        },
         "runtime": {
           "AceAutos.Core.dll": {}
         }
