@@ -18,3 +18,6 @@ C:\Users\PC\Documents\GitHub\AceAutos\Backend\AceAutos\AceAutos.Core\obj\Debug\n
 C:\Users\PC\Documents\GitHub\AceAutos\Backend\AceAutos\AceAutos.Core\obj\Debug\netcoreapp3.1\AceAutos.Core.csproj.CopyComplete
 C:\Users\PC\Documents\GitHub\AceAutos\Backend\AceAutos\AceAutos.Core\obj\Debug\netcoreapp3.1\AceAutos.Core.dll
 C:\Users\PC\Documents\GitHub\AceAutos\Backend\AceAutos\AceAutos.Core\obj\Debug\netcoreapp3.1\AceAutos.Core.pdb
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core\bin\Debug\netcoreapp3.1\AceAutos.Core.Entity.dll
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core\bin\Debug\netcoreapp3.1\AceAutos.Core.Entity.pdb
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core\obj\Debug\netcoreapp3.1\AceAutos.Core.csproj.CopyComplete
