@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\AceAutos.Infrastructure.SQL.csproj": {}
+    "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\AceAutos.Infrastructure.SQL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj": {
+    "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj",
         "projectName": "AceAutos.Core.Entity",
-        "projectPath": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj",
-        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\obj\\",
+        "projectPath": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj",
+        "packagesPath": "C:\\Users\\tiene\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tiene\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -56,17 +56,17 @@
         }
       }
     },
-    "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core\\AceAutos.Core.csproj": {
+    "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core\\AceAutos.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core\\AceAutos.Core.csproj",
+        "projectUniqueName": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core\\AceAutos.Core.csproj",
         "projectName": "AceAutos.Core",
-        "projectPath": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core\\AceAutos.Core.csproj",
-        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core\\obj\\",
+        "projectPath": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core\\AceAutos.Core.csproj",
+        "packagesPath": "C:\\Users\\tiene\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tiene\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,8 +79,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj": {
-                "projectPath": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj"
+              "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj": {
+                "projectPath": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj"
               }
             }
           }
@@ -118,17 +118,17 @@
         }
       }
     },
-    "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\AceAutos.Infrastructure.SQL.csproj": {
+    "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\AceAutos.Infrastructure.SQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\AceAutos.Infrastructure.SQL.csproj",
+        "projectUniqueName": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\AceAutos.Infrastructure.SQL.csproj",
         "projectName": "AceAutos.Infrastructure.SQL",
-        "projectPath": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\AceAutos.Infrastructure.SQL.csproj",
-        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\obj\\",
+        "projectPath": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\AceAutos.Infrastructure.SQL.csproj",
+        "packagesPath": "C:\\Users\\tiene\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Infrastructure.SQL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tiene\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -141,11 +141,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj": {
-                "projectPath": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj"
+              "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj": {
+                "projectPath": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core.Entity\\AceAutos.Core.Entity.csproj"
               },
-              "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core\\AceAutos.Core.csproj": {
-                "projectPath": "C:\\Users\\hp\\Documents\\GitHub\\AceAutos\\Backend\\AceAutos\\AceAutos.Core\\AceAutos.Core.csproj"
+              "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core\\AceAutos.Core.csproj": {
+                "projectPath": "C:\\Users\\tiene\\Desktop\\3. Semester\\Exam\\AceAutos\\Backend\\AceAutos\\AceAutos.Core\\AceAutos.Core.csproj"
               }
             }
           }

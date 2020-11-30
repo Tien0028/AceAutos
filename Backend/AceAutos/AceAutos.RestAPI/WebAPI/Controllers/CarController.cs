@@ -38,7 +38,7 @@ namespace WebAPI.Controllers
         [HttpGet("{id}", Name = "Get")]
         public IActionResult Get(long id)
         {
-            //return _productService.ReadProductById(id);
+            
             var pro = _carRepo.GetCar(id);
             if (pro == null)
             {
