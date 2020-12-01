@@ -41,6 +41,7 @@ namespace WebAPI
             Random rand = new Random();
             rand.NextBytes(secretBytes);
 
+            // Add JWT based authentication
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
             {
                 options.TokenValidationParameters = new TokenValidationParameters
@@ -55,6 +56,8 @@ namespace WebAPI
             });
 
             services.AddControllers().AddNewtonsoftJson();
+
+            // SqLite database:
             services.AddDbContext<DBContext>(
                 opt => opt.UseSqlite("Data Source = aceauto.db")
                 );
@@ -64,7 +67,7 @@ namespace WebAPI
 
             services.AddScoped<IUserRepository, UserRepository>();
 
-
+            // Register SqLite database initializer for dependency injection.
             services.AddTransient<IDBInitializer, DBInitializer>();
 
             services.AddSingleton<IAuthenticationHelper>(new AuthenticationHelper(secretBytes));
@@ -76,7 +79,7 @@ namespace WebAPI
                         builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
                     })
                     );
-
+            // Cors = Cross-Origin Resource Sharing 
 
 
         }
@@ -108,7 +111,7 @@ namespace WebAPI
                 }
             }
 
-            app.UseHttpsRedirection();
+            app.UseHttpsRedirection(); // Uses HTTPs 
 
             app.UseRouting();
 

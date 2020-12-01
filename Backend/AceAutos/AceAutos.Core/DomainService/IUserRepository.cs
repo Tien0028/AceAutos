@@ -12,5 +12,6 @@ namespace AceAutos.Core.DomainService
         void Add(User newUser);
         void Edit(User updateUser);
         void Remove(long id);
+        User GetUserByUsername(string username);
     }
 }

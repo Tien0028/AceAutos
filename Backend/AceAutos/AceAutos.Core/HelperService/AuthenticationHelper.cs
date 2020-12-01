@@ -60,16 +60,8 @@ namespace AceAutos.Infrastructure.Data.Helpers
 
 
         // This method generates and returns a JWT token for a user.
-        public string GenerateToken(User user)
+        public string GenerateToken(List<Claim> claims)
         {
-            var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.Name, user.Username)
-            };
-
-            if (user.IsAdmin)
-                claims.Add(new Claim(ClaimTypes.Role, "Administrator"));
-
             var token = new JwtSecurityToken(
                 new JwtHeader(new SigningCredentials(
                     new SymmetricSecurityKey(secretBytes),

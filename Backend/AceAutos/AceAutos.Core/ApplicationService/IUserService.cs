@@ -6,6 +6,6 @@ namespace AceAutos.Core.ApplicationService
 {
     public interface IUserService
     {
-
+        String ValidateUser(Tuple<string, string> attemptToLogin);
     }
 }

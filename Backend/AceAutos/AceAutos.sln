@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "AceAutos.RestAPI\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTesting", "UnitTesting", "{107A8C67-4DE0-4F43-BCA7-8136FE1F7449}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests2", "UnitTests2\UnitTests2.csproj", "{2E43135B-E7DB-47D0-BF89-6A328B6FBB8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests2\UnitTests.csproj", "{2E43135B-E7DB-47D0-BF89-6A328B6FBB8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

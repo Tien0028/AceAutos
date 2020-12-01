@@ -39,11 +39,17 @@ namespace AceAutos.Infrastructure.SQL.Repositories
             return _ctx.Users.ToList();
         }
 
+        public User GetUserByUsername(string username)
+        {
+            return _ctx.Users.ToList().FirstOrDefault(u => u.Username == username);
+        }
+
         public void Remove(long id)
         {
             var user = _ctx.Users.FirstOrDefault(u => u.Id == id);
             _ctx.Users.Remove(user);
             _ctx.SaveChanges();
         }
+
     }
 }

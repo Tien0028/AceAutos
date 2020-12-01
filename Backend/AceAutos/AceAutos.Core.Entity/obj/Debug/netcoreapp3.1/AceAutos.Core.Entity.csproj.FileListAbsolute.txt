@@ -15,3 +15,4 @@ C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core.
 C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core.Entity\obj\Debug\netcoreapp3.1\AceAutos.Core.Entity.csproj.CoreCompileInputs.cache
 C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core.Entity\obj\Debug\netcoreapp3.1\AceAutos.Core.Entity.dll
 C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core.Entity\obj\Debug\netcoreapp3.1\AceAutos.Core.Entity.pdb
+C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Core.Entity\obj\Debug\netcoreapp3.1\AceAutos.Core.Entity.csprojAssemblyReference.cache

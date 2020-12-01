@@ -2296,7 +2296,8 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "AceAutos.Core.Entity": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "5.0.0"
+          "Microsoft.EntityFrameworkCore": "5.0.0",
+          "System.IdentityModel.Tokens.Jwt": "6.8.0"
         },
         "compile": {
           "bin/placeholder/AceAutos.Core.dll": {}

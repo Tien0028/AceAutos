@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AceAutos.Core.ApplicationService;
 using AceAutos.Core.DomainService;
 using AceAutos.Infrastructure.Data.Helpers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
 using PetShopApplication.Core.Entities;
 
 namespace WebAPI.Controllers
@@ -13,32 +15,30 @@ namespace WebAPI.Controllers
     [Route("/token")]
     public class UserController : Controller
     {
-        private readonly IUserRepository _userRepo;
-        private readonly IAuthenticationHelper _authenHelper;
+        private readonly IUserService _userService;
 
-        public UserController(IUserRepository userRepo, IAuthenticationHelper authenHelper)
+        public UserController(IUserService userService)
         {
-            _userRepo = userRepo;
-            _authenHelper = authenHelper;
+            _userService = userService;
+ 
         }
 
         [HttpPost]
-        public IActionResult Login([FromBody] LoginInputModel model)
+        public IActionResult Login([FromBody] JObject data)
         {
-            var user = _userRepo.GetAll().FirstOrDefault(u => u.Username == model.Username);
-            // check if username exists
-            if (user == null)
-                return Unauthorized();
-
-            if (!_authenHelper.VerifyPasswordHash(model.Password, user.PasswordHash, user.PasswordSalt))
-                return Unauthorized();
-
-            // Authentication successful
-            return Ok(new
+            try
             {
-                username = user.Username,
-                token = _authenHelper.GenerateToken(user)
-            });
+                var validatedUser = _userService.ValidateUser(new Tuple<string, string>(data["username"].ToString(), data["password"].ToString()));
+
+                return Ok(new
+                {
+                    Token = validatedUser
+                });
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
 
 

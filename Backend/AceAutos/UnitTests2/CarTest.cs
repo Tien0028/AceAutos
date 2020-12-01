@@ -1,11 +1,9 @@
 using AceAutos.Core.DomainService;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Xunit;
 
 namespace UnitTests2
 {
-    [TestClass]
     public class CarTest
     {
         [Fact]
@@ -13,7 +11,7 @@ namespace UnitTests2
         {
             //Validate Data
             Mock<ICarRepository> carRepo = new Mock<ICarRepository>();
-
+            Assert.Equal(true, false);
         }
     }
 }
