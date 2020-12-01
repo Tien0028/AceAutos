@@ -11,12 +11,13 @@ namespace AceAutos.Core.DomainService
         List<Car> GetAllCars();
         Car CreateCar(Car car);
         Car GetCarById(int id);
-        void Update(Car updateCar);
+        Car Update(Car updateCar);
         Car DeleteCar(int id);
         Car GetCar(long id);
         void AddCar(Car addCar);
         void RemoveCar(long id);
         Car EditCar(string Model, string Type, int Year, string Manufacturer, int Price, string Fuel, string Color, int Mileage);
+        Car ReadCarByID(int carID);
 
     }
 }

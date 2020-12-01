@@ -64,7 +64,8 @@ namespace AceAutos.Core.ApplicationService.Implemented
 
         public Car ReadCarById(int id)
         {
-            return _carRepo.GetCarById(id);
+            //return _carRepo.GetCarById(id);
+            return _carRepo.ReadCarByID(id);
         }
 
         //public Car Update(Car car)
@@ -80,9 +81,9 @@ namespace AceAutos.Core.ApplicationService.Implemented
         //    return _carRepo.Update(car);
         //}
 
-        public void UpdateCar(Car car)
+        public Car UpdateCar(Car car)
         {
-            _carRepo.Update(car);
+           return _carRepo.Update(car);
         }
     }
 }

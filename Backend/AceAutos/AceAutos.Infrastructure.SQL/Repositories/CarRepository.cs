@@ -32,7 +32,9 @@ namespace AceAutos.Infrastructure.SQL.Repositories
 
         public Car CreateCar(Car car)
         {
-            throw new NotImplementedException();
+            _ctx.Attach(car).State = EntityState.Added;
+            _ctx.SaveChanges();
+            return car;
         }
 
         public Car GetCarById(int id)
@@ -40,10 +42,11 @@ namespace AceAutos.Infrastructure.SQL.Repositories
             return _ctx.Cars.FirstOrDefault(car => car.Id == id);
         }
 
-        public void Update(Car updateCar)
+        public Car Update(Car updateCar)
         {
             _ctx.Entry(updateCar).State = EntityState.Modified;
             _ctx.SaveChanges();
+            return updateCar;
         }
 
         public Car DeleteCar(int id)
@@ -72,6 +75,11 @@ namespace AceAutos.Infrastructure.SQL.Repositories
         public Car EditCar(string Model, string Type, int Year, string Manufacturer, int Price, string Fuel, string Color, int Mileage)
         {
             throw new NotImplementedException();
+        }
+
+        public Car ReadCarByID(int carID)
+        {
+            return _ctx.Cars.FirstOrDefault(car => car.Id == carID);
         }
     }
 }
