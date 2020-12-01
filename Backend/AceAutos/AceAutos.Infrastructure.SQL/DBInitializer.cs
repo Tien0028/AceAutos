@@ -48,16 +48,16 @@ namespace AceAutos.Infrastructure.SQL
                     PasswordSalt = passwordSaltAni, IsAdmin = true},
             };
 
-            List<Car> Cars = new List<Car>
+            List<Car> cars = new List<Car>
             {
-               new Car{Manufacturer = "Porsche", Model = "900", Color = "Brown", Type = "Coupe", Price = 999, Fuel = "Gas", Year = 2018, Mileage = 20000,},
-               new Car{Manufacturer = "Mercedes Benz", Model = "S Class", Color = "White", Type = "Luxury", Price = 01, Fuel = "Gas", Year = 2018, Mileage = 20000,},
-               new Car{Manufacturer = "Audi", Model = "R8", Color = "Indigo", Type = "Sports", Price = 90, Fuel = "Gas", Year = 2018, Mileage = 20000,},
-               new Car{Manufacturer = "BMW", Model = "M8", Color = "Red", Type = "SUV", Price = 12, Fuel = "Gas", Year = 2018, Mileage = 20000,}
+               new Car{Manufacturer = "Porsche", Model = "900", Color = "Brown", Type = "Coupe", Price = 999, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "",},
+               new Car{Manufacturer = "Mercedes Benz", Model = "S Class", Color = "White", Type = "Luxury", Price = 01, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "",},
+               new Car{Manufacturer = "Audi", Model = "R8", Color = "Indigo", Type = "Sports", Price = 90, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "",},
+               new Car{Manufacturer = "BMW", Model = "M8", Color = "Red", Type = "SUV", Price = 12, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "",}
             };
 
             ctx.AddRange(users);
-            ctx.AddRange(Cars);
+            ctx.AddRange(cars);
             ctx.SaveChanges();
 
 
