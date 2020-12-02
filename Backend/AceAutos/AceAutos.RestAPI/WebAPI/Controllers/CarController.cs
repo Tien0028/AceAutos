@@ -67,7 +67,7 @@ namespace WebAPI.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {
-            //return _productService.Delete(id);
+            //return _carService.Delete(id);
             var pro = _carRepo.GetCar(id);
             if (pro == null)
             {
