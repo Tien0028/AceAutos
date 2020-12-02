@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AceAutos.Core.Entity
 {
-    class Filter
+    public class Filter
     {
         public string OrderDirection { get; set; }
         public string OrderProperty { get; set; }

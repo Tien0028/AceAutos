@@ -50,10 +50,10 @@ namespace AceAutos.Infrastructure.SQL
 
             List<Car> cars = new List<Car>
             {
-               new Car{Manufacturer = "Porsche", Model = "900", Color = "Brown", Type = "Coupe", Price = 999, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "",},
-               new Car{Manufacturer = "Mercedes Benz", Model = "S Class", Color = "White", Type = "Luxury", Price = 01, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "",},
-               new Car{Manufacturer = "Audi", Model = "R8", Color = "Indigo", Type = "Sports", Price = 90, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "",},
-               new Car{Manufacturer = "BMW", Model = "M8", Color = "Red", Type = "SUV", Price = 12, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "",}
+               new Car{Manufacturer = "Porsche", Model = "900", Color = "Brown", Type = "Coupe", Price = 999, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "You looking for sporty! Check this one out!",},
+               new Car{Manufacturer = "Mercedes Benz", Model = "S Class", Color = "White", Type = "Luxury", Price = 01, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "Want something luxury? Here's your choice?",},
+               new Car{Manufacturer = "Audi", Model = "R8", Color = "Indigo", Type = "Sports", Price = 90, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "Sport cars are for showing off. If you want that, here you go!",},
+               new Car{Manufacturer = "BMW", Model = "M8", Color = "Red", Type = "SUV", Price = 12, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "Simple and nice, don't you think? This is the car for you!",}
             };
 
             ctx.AddRange(users);

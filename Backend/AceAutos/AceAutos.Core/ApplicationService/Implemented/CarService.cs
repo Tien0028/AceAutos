@@ -21,7 +21,16 @@ namespace AceAutos.Core.ApplicationService.Implemented
         {
             if (car.Model == null || car.Model.Length < 1)
             {
-                throw new InvalidDataException("");
+                //throw new InvalidDataException("Wrong!");
+                throw new ArgumentException("wrong!!");
+            }
+            if (string.IsNullOrEmpty(car.Manufacturer))
+            {
+                throw new ArgumentException("Car needs Manufacturer");
+            }
+            if (string.IsNullOrEmpty(car.Color))
+            {
+                throw new ArgumentException("Car needs a color!");
             }
             return _carRepo.CreateCar(car);
         }

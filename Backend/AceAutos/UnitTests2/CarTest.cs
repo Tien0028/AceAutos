@@ -73,7 +73,7 @@ namespace UnitTests2
         }
 
         [Fact]
-        public void CreateCar()
+        public void CreateCar_WithMíssingManufacturer_ShouldThrowArgumentException()
         {
             //Validate Create Data
             Mock<ICarRepository> carRepo = new Mock<ICarRepository>();
@@ -82,7 +82,7 @@ namespace UnitTests2
             Car car1 = new Car()
             {
                 Id = Id,
-                Manufacturer = "Mazda",
+                Manufacturer = "",
                 Model = "5",
                 Color = "Black",
                 Type = "Family Van",
@@ -102,9 +102,67 @@ namespace UnitTests2
         }
 
         [Fact]
-        public void EditCar()
+        public void CreateCar_WithTooLongModel_ShouldThrowArgumentException()
         {
             //Validate Create Data
+            Mock<ICarRepository> carRepo = new Mock<ICarRepository>();
+
+            int Id = 1;
+            Car car1 = new Car()
+            {
+                Id = Id,
+                Manufacturer = "Mazda",
+                Model = "",
+                Color = "Black",
+                Type = "Family Van",
+                Price = 99,
+                Fuel = "Diesel",
+                Year = 2014,
+                Mileage = 1000,
+                Description = "This is not a family car. This... Is.... SPARTA!"
+            };
+
+            carRepo.Setup(repo => repo.CreateCar(car1)).Returns(car1);
+
+            ICarService carService = new CarService(carRepo.Object);
+
+            Assert.Throws<ArgumentException>((Action)(() => carService.Create(car1)));
+
+        }
+
+        [Fact]
+        public void CreateCar_WithMíssingColor_ShouldThrowArgumentException()
+        {
+            //Validate Create Data
+            Mock<ICarRepository> carRepo = new Mock<ICarRepository>();
+
+            int Id = 1;
+            Car car1 = new Car()
+            {
+                Id = Id,
+                Manufacturer = "Mazda",
+                Model = "5",
+                Color = "",
+                Type = "Family Van",
+                Price = 99,
+                Fuel = "Diesel",
+                Year = 2014,
+                Mileage = 1000,
+                Description = "This is not a family car. This... Is.... SPARTA!"
+            };
+
+            carRepo.Setup(repo => repo.CreateCar(car1)).Returns(car1);
+
+            ICarService carService = new CarService(carRepo.Object);
+
+            Assert.Throws<ArgumentException>((Action)(() => carService.Create(car1)));
+
+        }
+
+        [Fact]
+        public void EditCar()
+        {
+            //Validate Edit Data
             Mock<ICarRepository> carRepo = new Mock<ICarRepository>();
 
             int Id = 1;
@@ -130,8 +188,8 @@ namespace UnitTests2
                 Color = "White",
                 Type = "Family Van",
                 Price = 99,
-                Fuel = "Diesel",
-                Year = 2014,
+                Fuel = "Black",
+                Year = 2016,
                 Mileage = 1000,
                 Description = "This is not a family car. This... Is.... SPARTA!"
             };
@@ -141,7 +199,7 @@ namespace UnitTests2
             ICarService carService = new CarService(carRepo.Object);
 
             var actual = carService.UpdateCar(given);
-            Assert.Equal(expected, given);
+            Assert.Equal(expected, actual);
 
 
         }
