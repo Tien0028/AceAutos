@@ -11,7 +11,7 @@ namespace AceAutos.Core.ApplicationService
         IEnumerable<CarType> GetAllCarTypes();
         CarType GetCarTypeWithId(int id);
         CarType RemoveCarType(int id);
-        CarType UpdateCarType(CarType productTypeToUpdate);
+        CarType UpdateCarType(CarType carTypeToUpdate);
         IEnumerable<CarType> GetFilteredCarType(Filter filter);
     }
 }
