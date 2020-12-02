@@ -66,10 +66,11 @@ namespace AceAutos.Core.ApplicationService.Implemented
             return _carRepo.GetAllCars();
         }
 
-        public List<Car> GetCars()
+        /*public List<Car> GetCars()
         {
             return _carRepo.GetAllCars();
         }
+        */
 
         public Car ReadCarById(int id)
         {
