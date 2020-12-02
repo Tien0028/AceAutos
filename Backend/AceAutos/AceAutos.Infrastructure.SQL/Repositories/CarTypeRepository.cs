@@ -10,7 +10,7 @@ namespace AceAutos.Infrastructure.SQL.Repositories
 {
     public class CarTypeRepository : ICarTypeRepository
     {
-        private DBContext _ctx;
+        private readonly DBContext _ctx;
 
         public CarTypeRepository(DBContext ctx)
         {
