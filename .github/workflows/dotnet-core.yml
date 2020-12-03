@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: Windows
+    runs-on: windows
     defaults:
       run:
         working-directory: ./Backend/AceAutos
