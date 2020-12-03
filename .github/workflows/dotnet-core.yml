@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: Windows
     defaults:
       run:
         working-directory: ./Backend/AceAutos
