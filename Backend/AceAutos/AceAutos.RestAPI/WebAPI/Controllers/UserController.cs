@@ -67,6 +67,24 @@ namespace WebAPI.Controllers
             return new NoContentResult();
         }
 
+        // PUT: api/User/5
+        //[HttpPut("{id}")]
+        //public ActionResult Put(int id, [FromBody] User user)
+        //{
+        //    try
+        //    {
+        //        if (id != user.Id)
+        //        {
+        //            return BadRequest("Parameter ID and owner ID have to be the same");
+        //        }
+
+        //        return Ok(_userRepo.Edit(user));
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        return BadRequest(e.Message);
+        //    }
+        //}
     }
 
 }

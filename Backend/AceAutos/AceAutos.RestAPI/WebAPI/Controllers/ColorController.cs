@@ -65,8 +65,8 @@ namespace WebAPI.Controllers
         public ActionResult<Color> Delete(int id)
         {
             var prod = _colorService.RemoveColor(id);
-            if (prod == null) return StatusCode(404, "Did not find Car with ID " + id);
-            return Ok($"Car with Id: {id} has been deleted");
+            if (prod == null) return StatusCode(404, "Did not find Car Color with ID " + id);
+            return Ok($"Color with Id: {id} has been deleted");
         }
     }
 }
