@@ -76,5 +76,20 @@ namespace WebAPI.Controllers
             _carRepo.RemoveCar(id);
             return new NoContentResult();
         }
+
+        ////[Authorize(Roles = "Administrator")]
+        //[HttpDelete("{id}")]
+        //public IActionResult DeleteAll(long id)
+        //{
+        //    //return _carService.Delete(id);
+        //    var pro = _carRepo.GetAllCars();
+        //    if (pro == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    _carRepo.RemoveCar(id);
+        //    return new NoContentResult();
+        //}
+
     }
 }
