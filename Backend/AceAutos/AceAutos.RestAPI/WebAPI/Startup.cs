@@ -65,6 +65,7 @@ namespace WebAPI
             services.AddScoped<ICarService, CarService>();
             services.AddScoped<ICarRepository, CarRepository>();
 
+            services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepository, UserRepository>();
 
             // Register SqLite database initializer for dependency injection.
@@ -114,6 +115,10 @@ namespace WebAPI
             app.UseHttpsRedirection(); // Uses HTTPs 
 
             app.UseRouting();
+
+            app.UseCors();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

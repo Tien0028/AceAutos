@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace WebAPI.Controllers
 {
     [Produces("application/json")]
-    [Route("api/[controller]")]
+    [Route("/[controller]")]
     [ApiController]
     public class CarController : Controller
     {
@@ -26,7 +26,7 @@ namespace WebAPI.Controllers
         }
 
         //GET: api/Car
-        //[Authorize]
+        [Authorize(Roles = "Administrator")]
         [HttpGet]
         public IEnumerable<Car> GetAll()
         {
