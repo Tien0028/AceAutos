@@ -10,7 +10,7 @@ namespace AceAutos.Core.DomainService
         IEnumerable<User> GetAll();
         User Get(long id);
         void Add(User newUser);
-        void Edit(User updateUser);
+        User Edit(User updateUser);
         void Remove(long id);
         User GetUserByUsername(string username);
     }

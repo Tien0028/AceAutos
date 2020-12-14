@@ -13,7 +13,7 @@ namespace AceAutos.Core.ApplicationService
         //Car Update(Car car);
         Car Delete(int id);
         Car ReadCarById(int id);
-        Car UpdateCar(Car car);
+        Car UpdateCar(int id, Car car);
 
     }
 }

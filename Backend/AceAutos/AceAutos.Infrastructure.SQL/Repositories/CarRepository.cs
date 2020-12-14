@@ -42,16 +42,31 @@ namespace AceAutos.Infrastructure.SQL.Repositories
             return _ctx.Cars.FirstOrDefault(car => car.Id == id);
         }
 
-        public Car Update(Car updateCar)
+        public Car Update(int id, Car updateCar)
         {
-            _ctx.Entry(updateCar).State = EntityState.Modified;
-            _ctx.SaveChanges();
+            var currentCar = GetCarById(id);
+            if(currentCar != null){
+                currentCar.Color = updateCar.Color;
+                currentCar.Description = updateCar.Description;
+                currentCar.Fuel = updateCar.Fuel;
+                currentCar.Manufacturer = updateCar.Manufacturer;
+                currentCar.Mileage = updateCar.Mileage;
+                currentCar.Model = updateCar.Model;
+                currentCar.Price = updateCar.Price;
+                currentCar.Type = updateCar.Type;
+                currentCar.Year = updateCar.Year;
+                _ctx.Entry(currentCar).State = EntityState.Modified;
+                _ctx.SaveChanges();
+            }
             return updateCar;
         }
 
         public Car DeleteCar(int id)
         {
-            throw new NotImplementedException();
+            var car = _ctx.Cars.FirstOrDefault(c => c.Id == id);
+            _ctx.Entry(car).State = EntityState.Deleted;
+            _ctx.SaveChanges();
+            return car;
         }
 
         public Car GetCar(long id)

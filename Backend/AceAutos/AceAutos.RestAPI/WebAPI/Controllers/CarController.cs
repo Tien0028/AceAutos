@@ -31,7 +31,6 @@ namespace WebAPI.Controllers
         public IEnumerable<Car> GetAll()
         {
             return _carService.GetCars();
-
         }
 
         // GET api/Car/5
@@ -66,16 +65,30 @@ namespace WebAPI.Controllers
         // DELETE api/ApiWithActions/5
         //[Authorize(Roles = "Administrator")]
         [HttpDelete("{id}")]
-        public IActionResult Delete(long id)
+        public IActionResult Delete(int id)
         {
             //return _carService.Delete(id);
-            var pro = _carRepo.GetCar(id);
-            if (pro == null)
+            try
             {
-                return NotFound();
+                return Ok(_carService.Delete(id));
             }
-            _carRepo.RemoveCar(id);
-            return new NoContentResult();
+            catch (Exception e)
+            {
+                return NotFound(e.Message);
+            }
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Put(int id, [FromBody] Car car)
+        {
+            try
+            {
+                return Ok(_carService.UpdateCar(id, car));
+            }
+            catch (Exception e)
+            {
+                return NotFound(e.Message);
+            }
         }
 
         ////[Authorize(Roles = "Administrator")]

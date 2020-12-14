@@ -91,9 +91,9 @@ namespace AceAutos.Core.ApplicationService.Implemented
         //    return _carRepo.Update(car);
         //}
 
-        public Car UpdateCar(Car car)
+        public Car UpdateCar(int id, Car car)
         {
-           return _carRepo.Update(car);
+           return _carRepo.Update(id ,car);
         }
     }
 }

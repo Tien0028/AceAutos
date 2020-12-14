@@ -23,10 +23,11 @@ namespace AceAutos.Infrastructure.SQL.Repositories
             _ctx.SaveChanges();
         }
 
-        public void Edit(User updateUser)
+        public User Edit(User updateUser)
         {
             _ctx.Entry(updateUser).State = EntityState.Modified;
             _ctx.SaveChanges();
+            return updateUser;
         }
 
         public User Get(long id)
