@@ -57,8 +57,9 @@ namespace WebAPI.Controllers
             {
                 return BadRequest();
             }
-            _carRepo.AddCar(car);
-
+            //_carRepo.AddCar(car);
+            //_carService.CreateCar(car);
+            _carService.Create(car);
             return CreatedAtRoute("Get", new { id = car.Id }, car);
         }
 
@@ -91,19 +92,6 @@ namespace WebAPI.Controllers
             }
         }
 
-        ////[Authorize(Roles = "Administrator")]
-        //[HttpDelete("{id}")]
-        //public IActionResult DeleteAll(long id)
-        //{
-        //    //return _carService.Delete(id);
-        //    var pro = _carRepo.GetAllCars();
-        //    if (pro == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    _carRepo.RemoveCar(id);
-        //    return new NoContentResult();
-        //}
-
+ 
     }
 }
