@@ -168,9 +168,9 @@ namespace UnitTests2
                 Description = "This is not a family car. This... Is.... SPARTA!"
             };
             carRepo.Setup(repo => repo.ReadCarByID(Id)).Returns(given);
-            carRepo.Setup(repo => repo.Update(given)).Returns(expected);
+            carRepo.Setup(repo => repo.Update(given.Id, given)).Returns(expected);
             ICarService carService = new CarService(carRepo.Object);
-            var actual = carService.UpdateCar(given);
+            var actual = carService.UpdateCar(given.Id, given);
             Assert.Equal(expected, actual);
         }
     }
