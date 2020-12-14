@@ -23,10 +23,31 @@ namespace AceAutos.Infrastructure.SQL.Repositories
             _ctx.SaveChanges();
         }
 
+        public User DeleteUser(int id)
+        {
+            var user = _ctx.Users.FirstOrDefault(c => c.Id == id);
+            _ctx.Entry(user).State = EntityState.Deleted;
+            _ctx.SaveChanges();
+            return user;
+        }
+
         public User Edit(User updateUser)
         {
             _ctx.Entry(updateUser).State = EntityState.Modified;
             _ctx.SaveChanges();
+            return updateUser;
+        }
+
+        public User Edit(int id, User updateUser)
+        {
+            var selectedUser = GetUserById(id);
+            if (selectedUser != null)
+            {
+                selectedUser.Username = updateUser.Username;
+                selectedUser.IsAdmin = updateUser.IsAdmin;
+                _ctx.Entry(selectedUser).State = EntityState.Modified;
+                _ctx.SaveChanges();
+            }
             return updateUser;
         }
 
@@ -38,6 +59,16 @@ namespace AceAutos.Infrastructure.SQL.Repositories
         public IEnumerable<User> GetAll()
         {
             return _ctx.Users.ToList();
+        }
+
+        public List<User> GetAllUsers()
+        {
+            return _ctx.Users.ToList();
+        }
+
+        public User GetUserById(int id)
+        {
+            return _ctx.Users.FirstOrDefault(user => user.Id == id);
         }
 
         public User GetUserByUsername(string username)

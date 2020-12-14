@@ -60,5 +60,20 @@ namespace AceAutos.Core.ApplicationService.Implemented
 
             return user;
         }
+
+        public User DeleteUser(int id)
+        {
+            return _userRepo.DeleteUser(id);
+        }
+
+        public User EditUser(int id, User user)
+        {
+            return _userRepo.Edit(id, user);
+        }
+
+        public List<User> GetAllUsers()
+        {
+            return _userRepo.GetAllUsers();
+        }
     }
 }

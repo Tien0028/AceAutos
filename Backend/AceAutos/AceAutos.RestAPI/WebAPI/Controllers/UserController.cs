@@ -51,22 +51,24 @@ namespace WebAPI.Controllers
         [HttpGet]
         public IEnumerable<User> GetAll()
         {
-            return _userRepo.GetAll();
+            return _userService.GetAllUsers();
         }
 
         // DELETE api/ApiWithActions/5
         [Authorize(Roles = "Administrator")]
         [HttpDelete("{id}")]
-        public IActionResult Delete(long id)
+        public IActionResult Delete(int id)
         {
-            //return _carService.Delete(id);
-            var user = _userRepo.Get(id);
-            if (user == null)
+
+            try
             {
-                return NotFound();
+                return Ok(_userService.DeleteUser(id));
             }
-            _userRepo.Remove(id);
-            return new NoContentResult();
+            catch (Exception e)
+            {
+                return NotFound(e.Message);
+            }
+
         }
 
         //PUT: api/User/5
@@ -81,7 +83,7 @@ namespace WebAPI.Controllers
                 {
                     return BadRequest("Parameter ID and user ID have to be the same");
                 }
-                return Ok(_userRepo.Edit(user));
+                return Ok(_userService.EditUser(id, user));
             }
             catch (Exception e)
             {
