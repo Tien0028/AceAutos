@@ -14,7 +14,7 @@ using PetShopApplication.Core.Entities;
 
 namespace WebAPI.Controllers
 {
-    [Route("/token")]
+    [Route("api/token")]
     public class UserController : Controller
     {
         private readonly IUserService _userService;
@@ -26,6 +26,7 @@ namespace WebAPI.Controllers
             _userRepo = userRepo;
         }
 
+
         [HttpPost]
         public IActionResult Login([FromBody] JObject data)
         {
@@ -35,7 +36,8 @@ namespace WebAPI.Controllers
 
                 return Ok(new
                 {
-                    Token = validatedUser
+                    username = data["username"].ToString(),
+                    token = validatedUser
                 });
             }
             catch (Exception e)

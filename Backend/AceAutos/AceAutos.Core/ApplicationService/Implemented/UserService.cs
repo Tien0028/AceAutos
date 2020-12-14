@@ -32,8 +32,6 @@ namespace AceAutos.Core.ApplicationService.Implemented
 
             //Generate refresh token and save it for user.
 
-
-
             return _authentication.GenerateToken(claims);
         }
 

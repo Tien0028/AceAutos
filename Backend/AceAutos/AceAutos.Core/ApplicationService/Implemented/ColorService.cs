@@ -9,7 +9,7 @@ namespace AceAutos.Core.ApplicationService.Implemented
 {
     public class ColorService : IColorService
     {
-        private IColorRepository _colorRepo;
+        private readonly IColorRepository _colorRepo;
         public ColorService(IColorRepository colorRepo)
         {
             _colorRepo = colorRepo;

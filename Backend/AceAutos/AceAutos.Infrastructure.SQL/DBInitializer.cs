@@ -36,6 +36,7 @@ namespace AceAutos.Infrastructure.SQL
             authenticationHelper.CreatePasswordHash(password, out passwordHashJanet, out passwordSaltJanet);
             authenticationHelper.CreatePasswordHash(password, out passwordHashAni, out passwordSaltAni);
 
+            // Create two users with hashed and salted passwords
             List<User> users = new List<User>
             {
                 new User{Username = "UserJoe", PasswordHash = passwordHashJoe,
