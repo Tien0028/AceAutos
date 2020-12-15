@@ -51,10 +51,10 @@ namespace AceAutos.Infrastructure.SQL
 
             List<Car> cars = new List<Car>
             {
-               new Car{Manufacturer = "Porsche", Model = "900", Color = "Brown", Type = "Coupe", Price = 999, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "You looking for sporty! Check this one out!",},
-               new Car{Manufacturer = "Mercedes Benz", Model = "S Class", Color = "White", Type = "Luxury", Price = 01, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "Want something luxury? Here's your choice?",},
-               new Car{Manufacturer = "Audi", Model = "R8", Color = "Indigo", Type = "Sports", Price = 90, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "Sport cars are for showing off. If you want that, here you go!",},
-               new Car{Manufacturer = "BMW", Model = "M8", Color = "Red", Type = "SUV", Price = 12, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "Simple and nice, don't you think? This is the car for you!",}
+               new Car{Manufacturer = "Porsche", Model = "900", Color = "Brown", Type = "Coupe", Price = 999, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "You looking for sporty! Check this one out! Find us, the Flendersons at 100 Charming Avenue",},
+               new Car{Manufacturer = "Mercedes Benz", Model = "S Class", Color = "White", Type = "Luxury", Price = 01, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "Want something luxury? Here's your choice. This is the pride and joy of the Simpsons, but find us at 742 Evergreen Terraec, if you want it",},
+               new Car{Manufacturer = "Audi", Model = "R8", Color = "Indigo", Type = "Sports", Price = 90, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "Sport cars are for showing off. If you want that, here you go! Make the celebrities jealous with this beauty from 31 Spooner Street in Quahog, Rhode Island",},
+               new Car{Manufacturer = "BMW", Model = "M8", Color = "Red", Type = "SUV", Price = 12, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "Simple and nice, don't you think? This is the car for you! Not a deathtrap, but it's Florida, check it out!",}
             };
 
             List<Customer> customers = new List<Customer>
@@ -67,7 +67,6 @@ namespace AceAutos.Infrastructure.SQL
             ctx.AddRange(cars);
             ctx.AddRange(customers);
             ctx.SaveChanges();
-
 
 
         }
