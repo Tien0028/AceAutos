@@ -47,7 +47,7 @@ namespace WebAPI.Controllers
         }
 
         //GET: api/User
-        [Authorize(Roles = "Adminstrator")]
+        [Authorize(Roles = "Administrator")]
         [HttpGet]
         public IEnumerable<User> GetAll()
         {

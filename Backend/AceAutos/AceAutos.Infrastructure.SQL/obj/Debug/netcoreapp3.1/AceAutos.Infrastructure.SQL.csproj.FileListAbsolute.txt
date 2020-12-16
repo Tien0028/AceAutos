@@ -26,3 +26,17 @@ C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infra
 C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.csproj.CopyComplete
 C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.dll
 C:\Users\tiene\Desktop\3. Semester\Exam\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.pdb
+C:\GitHub\AceAutos-master\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\bin\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.deps.json
+C:\GitHub\AceAutos-master\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\bin\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.dll
+C:\GitHub\AceAutos-master\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\bin\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.pdb
+C:\GitHub\AceAutos-master\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\bin\Debug\netcoreapp3.1\AceAutos.Core.dll
+C:\GitHub\AceAutos-master\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\bin\Debug\netcoreapp3.1\AceAutos.Core.Entity.dll
+C:\GitHub\AceAutos-master\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\bin\Debug\netcoreapp3.1\AceAutos.Core.Entity.pdb
+C:\GitHub\AceAutos-master\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\bin\Debug\netcoreapp3.1\AceAutos.Core.pdb
+C:\GitHub\AceAutos-master\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.csprojAssemblyReference.cache
+C:\GitHub\AceAutos-master\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.AssemblyInfoInputs.cache
+C:\GitHub\AceAutos-master\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.AssemblyInfo.cs
+C:\GitHub\AceAutos-master\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.csproj.CoreCompileInputs.cache
+C:\GitHub\AceAutos-master\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.csproj.CopyComplete
+C:\GitHub\AceAutos-master\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.dll
+C:\GitHub\AceAutos-master\AceAutos\Backend\AceAutos\AceAutos.Infrastructure.SQL\obj\Debug\netcoreapp3.1\AceAutos.Infrastructure.SQL.pdb
