@@ -87,10 +87,7 @@ namespace AceAutos.Infrastructure.SQL.Repositories
             _ctx.SaveChanges();
         }
 
-        public Car EditCar(string Model, string Type, int Year, string Manufacturer, int Price, string Fuel, string Color, int Mileage)
-        {
-            throw new NotImplementedException();
-        }
+
 
         public Car ReadCarByID(int carID)
         {

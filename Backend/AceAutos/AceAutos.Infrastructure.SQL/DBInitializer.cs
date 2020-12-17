@@ -57,15 +57,9 @@ namespace AceAutos.Infrastructure.SQL
                new Car{Manufacturer = "BMW", Model = "M8", Color = "Red", Type = "SUV", Price = 12, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "Simple and nice, don't you think? This is the car for you! Not a deathtrap, but it's Florida, check it out!",}
             };
 
-            List<Customer> customers = new List<Customer>
-            {
-                new Customer{FirstName = "Jack", LastName = "Sparrow"},
-                new Customer{FirstName = "Janet", LastName = "Dude"},
-            };
 
             ctx.AddRange(users);
             ctx.AddRange(cars);
-            ctx.AddRange(customers);
             ctx.SaveChanges();
 
 

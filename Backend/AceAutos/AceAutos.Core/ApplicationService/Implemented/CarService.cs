@@ -21,7 +21,7 @@ namespace AceAutos.Core.ApplicationService.Implemented
         {
             if (car.Model == null || car.Model.Length < 1)
             {
-                //throw new InvalidDataException("Wrong!");
+                
                 throw new ArgumentException("wrong!!");
             }
             if (string.IsNullOrEmpty(car.Manufacturer))
@@ -35,22 +35,7 @@ namespace AceAutos.Core.ApplicationService.Implemented
             return _carRepo.CreateCar(car);
         }
 
-        public Car CreateCar(string Model, string Type, int Year, string Manufacturer, int Price, string Fuel, string Color, int Mileage)
-        {
-            var car = new Car()
-            {
-                Model = Model,
-                Type = Type,
-                Year = Year,
-                Manufacturer = Manufacturer,
-                Price = Price,
-                Fuel = Fuel,
-                Color = Color,
-                Mileage = Mileage
 
-            };
-            return _carRepo.CreateCar(car);
-        }
 
         public Car Delete(int id)
         {
@@ -61,6 +46,11 @@ namespace AceAutos.Core.ApplicationService.Implemented
             return _carRepo.DeleteCar(id);
         }
 
+        public Car GetCar(long id)
+        {
+            return _carRepo.GetCar(id);
+        }
+
         public List<Car> GetCars()
         {
             return _carRepo.GetAllCars();
@@ -69,7 +59,7 @@ namespace AceAutos.Core.ApplicationService.Implemented
 
         public Car ReadCarById(int id)
         {
-            //return _carRepo.GetCarById(id);
+            
             return _carRepo.ReadCarByID(id);
         }
 

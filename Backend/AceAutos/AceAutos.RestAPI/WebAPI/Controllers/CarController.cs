@@ -17,12 +17,12 @@ namespace WebAPI.Controllers
     public class CarController : Controller
     {
         private readonly ICarService _carService;
-        private readonly ICarRepository _carRepo;
+   
 
-        public CarController(ICarService carService, ICarRepository carRepo)
+        public CarController(ICarService carService)
         {
             _carService = carService;
-            _carRepo = carRepo;
+            
         }
 
         //GET: api/Car
@@ -39,7 +39,7 @@ namespace WebAPI.Controllers
         public IActionResult Get(long id)
         {
             
-            var pro = _carRepo.GetCar(id);
+            var pro = _carService.GetCar(id);
             if (pro == null)
             {
                 return NotFound();
@@ -57,8 +57,7 @@ namespace WebAPI.Controllers
             {
                 return BadRequest();
             }
-            //_carRepo.AddCar(car);
-            //_carService.CreateCar(car);
+            
             _carService.Create(car);
             return CreatedAtRoute("Get", new { id = car.Id }, car);
         }
@@ -68,7 +67,7 @@ namespace WebAPI.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            //return _carService.Delete(id);
+            
             try
             {
                 return Ok(_carService.Delete(id));

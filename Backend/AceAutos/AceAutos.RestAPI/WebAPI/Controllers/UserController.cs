@@ -18,12 +18,11 @@ namespace WebAPI.Controllers
     public class UserController : Controller
     {
         private readonly IUserService _userService;
-        private readonly IUserRepository _userRepo;
+ 
 
-        public UserController(IUserService userService, IUserRepository userRepo)
+        public UserController(IUserService userService)
         {
             _userService = userService;
-            _userRepo = userRepo;
         }
 
 

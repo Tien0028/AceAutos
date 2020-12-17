@@ -80,7 +80,7 @@ namespace WebAPI
                         builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
                     })
                     );
-            // Cors = Cross-Origin Resource Sharing 
+           
 
 
         }
