@@ -14,9 +14,7 @@ namespace AceAutos.Infrastructure.SQL
         }
         public DbSet<User> Users { get; set; }
         public DbSet<Car> Cars { get; set; }
-        public DbSet<CarType> CarTypes { get; set; }
         public DbSet<Customer> Customers { get; set; }
-        public DbSet<Color> Colors { get; set; }
 
     }
 }

@@ -11,7 +11,6 @@ namespace AceAutos.Core.Entity
         public string LastName { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
-        public List<Order> AllOrders { get; set; }
 
     }
 }
