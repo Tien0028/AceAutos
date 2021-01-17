@@ -16,25 +16,30 @@ namespace WebAPI.Controllers
     [ApiController]
     public class CarController : Controller
     {
+        //UI Layer, part of presentation layer of CLEAN ARCHITECTURE.
+        //A controller is responsible for controlling the way that a user interacts with an MVC application. 
+        //A controller contains the flow control logic for an ASP.NET MVC application. 
+        //A controller determines what response to send back to a user when a user makes a browser request.
         private readonly ICarService _carService;
-   
+        
 
         public CarController(ICarService carService)
         {
             _carService = carService;
-            
         }
 
         //GET: api/Car
-        //[Authorize(Roles = "Administrator")]
         [HttpGet]
         public IEnumerable<Car> GetAll()
         {
+            //When link above is invoked in anyway, all cars are shown and displayed, after retrieving the cars from the lower stacks.
+            //Upon selection, it gets cars from carservice.
             return _carService.GetCars();
+            //Our Backend is heavily dependent on Inheritance, Polymorphism, and Dependency Injection 
+            //allowing classes to inherit methods from other classes and use their methods to perform different tasks.
         }
 
         // GET api/Car/5
-        //[Authorize(Roles = "Adminstrator")]
         [HttpGet("{id}", Name = "Get")]
         public IActionResult Get(long id)
         {
@@ -49,7 +54,6 @@ namespace WebAPI.Controllers
         }
 
         // POST api/Car
-        //[Authorize(Roles = "Administrator")]
         [HttpPost]
         public IActionResult Post([FromBody] Car car)
         {
@@ -62,8 +66,7 @@ namespace WebAPI.Controllers
             return CreatedAtRoute("Get", new { id = car.Id }, car);
         }
 
-        // DELETE api/ApiWithActions/5
-        //[Authorize(Roles = "Administrator")]
+        // DELETE api/Car/5
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

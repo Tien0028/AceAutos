@@ -10,6 +10,8 @@ namespace UnitTests2
 {
     public class CarTest
     {
+       
+        //Fact is used to mark a method.
         [Fact]
         public void ReadById()
         {
@@ -31,9 +33,11 @@ namespace UnitTests2
                 Description = "This is not a family car. This... Is.... SPARTA!"
             };
             carRepo.Setup(repo => repo.ReadCarByID(Id)).Returns(car1);
+            //Setup is a way to invoke a mock type of method from a repository.
             ICarService carService = new CarService(carRepo.Object);
             var actual = carService.ReadCarById(Id);
             Assert.Equal(car1, actual);
+            //Static methods used to verify methods are met.
             //Assert.Equal(true, false);
         }
 
@@ -82,6 +86,7 @@ namespace UnitTests2
                 Description = "This is not a family car. This... Is.... SPARTA!"
             };
             carRepo.Setup(repo => repo.CreateCar(car1)).Returns(car1);
+            //Setup is a way to invoke a mock type of method from a repository.
             ICarService carService = new CarService(carRepo.Object);
             Assert.Throws<ArgumentException>((Action)(() => carService.Create(car1)));
         }

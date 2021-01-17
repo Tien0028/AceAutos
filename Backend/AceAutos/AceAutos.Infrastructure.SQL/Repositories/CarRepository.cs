@@ -10,6 +10,7 @@ namespace AceAutos.Infrastructure.SQL.Repositories
 {
     public class CarRepository : ICarRepository
     {
+        //Data Access Layer of CLEAN Architecture.
         private readonly DBContext _ctx;
         public static int CarId = 1;
 
@@ -27,6 +28,9 @@ namespace AceAutos.Infrastructure.SQL.Repositories
 
         public List<Car> GetAllCars()
         {
+            //using the Repository pattern, 
+            //database manipulation takes place, this method uses DBContext to get all cars in the database.
+            //DBContext is used to query instances of the entities to a database.
             return _ctx.Cars.ToList();
         }
 
@@ -63,6 +67,7 @@ namespace AceAutos.Infrastructure.SQL.Repositories
 
         public Car DeleteCar(int id)
         {
+            //FirstOrDefault is used to retrieve a specified element within a collection.
             var car = _ctx.Cars.FirstOrDefault(c => c.Id == id);
             _ctx.Entry(car).State = EntityState.Deleted;
             _ctx.SaveChanges();

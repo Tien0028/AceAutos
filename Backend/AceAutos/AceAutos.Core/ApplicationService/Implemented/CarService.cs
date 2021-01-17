@@ -10,6 +10,8 @@ namespace AceAutos.Core.ApplicationService.Implemented
 {
     public class CarService: ICarService
     {
+        //Domain layer of CLEAN ARCHITECTURE.
+
         private readonly ICarRepository _carRepo;
 
         public CarService(ICarRepository carRepo)
@@ -53,6 +55,9 @@ namespace AceAutos.Core.ApplicationService.Implemented
 
         public List<Car> GetCars()
         {
+            //When invoked, the car repository's GetAllCars retrieves the cars.
+            //In here, Services interact with infrastructure concerns, 
+            //they're designed to inherit repository classes and implement their funtionality.
             return _carRepo.GetAllCars();
         }
 

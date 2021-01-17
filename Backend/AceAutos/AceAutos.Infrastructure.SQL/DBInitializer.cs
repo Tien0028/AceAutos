@@ -49,7 +49,7 @@ namespace AceAutos.Infrastructure.SQL
                     PasswordSalt = passwordSaltAni, IsAdmin = true},
             };
 
-            List<Car> cars = new List<Car>
+            List<Car> cars = new List<Car> //Collection of Car with all vehicles.
             {
                new Car{Manufacturer = "Porsche", Model = "900", Color = "Brown", Type = "Coupe", Price = 999, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "You looking for sporty! Check this one out! Find us, the Flendersons at 100 Charming Avenue",},
                new Car{Manufacturer = "Mercedes Benz", Model = "S Class", Color = "White", Type = "Luxury", Price = 01, Fuel = "Gas", Year = 2018, Mileage = 20000, Description = "Want something luxury? Here's your choice. This is the pride and joy of the Simpsons, but find us at 742 Evergreen Terraec, if you want it",},
@@ -60,7 +60,9 @@ namespace AceAutos.Infrastructure.SQL
 
             ctx.AddRange(users);
             ctx.AddRange(cars);
+            //AddRange, adds a collection of new entities to DbContext with added state and starts tracking it.
             ctx.SaveChanges();
+            //New entity data is inserted into database when SaveChanges is called.
 
 
         }

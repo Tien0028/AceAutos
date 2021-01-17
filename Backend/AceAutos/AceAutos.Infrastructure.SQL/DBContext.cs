@@ -8,7 +8,7 @@ namespace AceAutos.Infrastructure.SQL
 {
     public class DBContext : DbContext
     {
-
+        //DBContext is not a database, it is an access point to the database and contains pieces of the database.
         public DBContext(DbContextOptions<DBContext> opt) : base(opt)
         {
         }

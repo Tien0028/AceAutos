@@ -21,8 +21,10 @@ namespace AceAutos.Core.ApplicationService.Implemented
 
         public String ValidateUser(Tuple<string, string> attemptToLogin)
         {
+            //Checks if the user is valid, first, otherwise it's gonna return invalid and checks the first item, which is the username.
             var user = CheckForValidUser(attemptToLogin.Item1);
 
+            //Next, if there's no verified hashed password, it's gonna throw an exception.
             if (!_authentication.VerifyPasswordHash(attemptToLogin.Item2, user.PasswordHash, user.PasswordSalt))
             {
                 throw new ArgumentException("Invalid password");
@@ -43,7 +45,7 @@ namespace AceAutos.Core.ApplicationService.Implemented
                         new Claim(ClaimTypes.Name, user.Username)
                     };
 
-            if (user.IsAdmin) claims.Add(new Claim(ClaimTypes.Role, "Administrator"));
+            if (user.IsAdmin) claims.Add(new Claim(ClaimTypes.Role, "Administrator")); //Uses if-else to add a role to a claim, depending on the role of the user.
             else claims.Add(new Claim(ClaimTypes.Role, "User"));
 
             return claims;
@@ -51,6 +53,7 @@ namespace AceAutos.Core.ApplicationService.Implemented
 
         private User CheckForValidUser(String username)
         {
+            //Method made and used to check if the user is valid.
             var user = _userRepo.GetUserByUsername(username);
 
             if (user == null)
