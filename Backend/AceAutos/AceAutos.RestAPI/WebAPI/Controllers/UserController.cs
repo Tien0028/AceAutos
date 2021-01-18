@@ -31,6 +31,7 @@ namespace WebAPI.Controllers
         {
             try
             {
+                //Tuple is used because it's easier to pair with JSON Data (JObject data), allowing us to retrieve both username and password inputs.
                 var validatedUser = _userService.ValidateUser(new Tuple<string, string>(data["username"].ToString(), data["password"].ToString()));
 
                 return Ok(new

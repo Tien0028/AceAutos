@@ -24,7 +24,8 @@ namespace AceAutos.Core.ApplicationService.Implemented
             //Checks if the user is valid, first, otherwise it's gonna return invalid and checks the first item, which is the username.
             var user = CheckForValidUser(attemptToLogin.Item1);
 
-            //Next, if there's no verified hashed password, it's gonna throw an exception.
+            //Next, if there's no verified hashed and salted password, which is equal to the password of the login, 
+            //it's gonna throw an exception.
             if (!_authentication.VerifyPasswordHash(attemptToLogin.Item2, user.PasswordHash, user.PasswordSalt))
             {
                 throw new ArgumentException("Invalid password");
@@ -56,6 +57,7 @@ namespace AceAutos.Core.ApplicationService.Implemented
             //Method made and used to check if the user is valid.
             var user = _userRepo.GetUserByUsername(username);
 
+            //If no user it's gonna throw exception
             if (user == null)
             {
                 throw new ArgumentException("Invalid User");

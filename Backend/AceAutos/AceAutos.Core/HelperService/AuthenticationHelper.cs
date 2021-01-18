@@ -61,9 +61,13 @@ namespace AceAutos.Infrastructure.Data.Helpers
         }
 
 
-        // This method generates and returns a JWT token for a user.
+        // This method generates and returns a JWT token for a user
+        //A token is a small hardware device that the owner carries to to authorize access to a network service.
+        //The token is run through the cryptographic language, encrypting it with SHA-256
+        //Symmetric Algorithms: Uses a singles ecret key to both sign and verify the JWT token.
         public string GenerateToken(List<Claim> claims)
         {
+            //Claims contains all of the information we want to transmit.
             var token = new JwtSecurityToken(
                 new JwtHeader(new SigningCredentials(
                     new SymmetricSecurityKey(secretBytes),
